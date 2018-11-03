@@ -285,5 +285,5 @@ export function removeContentClass ($content) {
  */
 export function checkContentInnerNull ($content) {
   const $childs = $content.children
-  return $childs.length <= 1 && util.isEmpty($content.innerText)
+  return $childs.length <= 1 && util.isEmpty($content.innerHTML)
 }
